@@ -1,0 +1,28 @@
+﻿<Window x:Class="RegistrationApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Регистрация" Height="350" Width="500" Cursor="Pen">
+    <Grid Cursor="Pen" Margin="0,0,0,-6">
+        <Grid.Background>
+            <ImageBrush ImageSource="/e57abd86579023624508193855b0cdb2.jpg" TileMode="Tile"/>
+        </Grid.Background>
+        <Label Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontSize="24" FontFamily="Impact" Foreground="Red"/>
+
+        <Label Content="Пользователь:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,72,0,0" RenderTransformOrigin="0.5,0.5" Foreground="Red" FontFamily="Franklin Gothic Medium" FontSize="18" FontWeight="Bold" FontStyle="Italic">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.102"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,75,0,0" Width="200" Height="23"/>
+
+        <Label Content="Пароль:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="59,114,0,0" Foreground="Red" FontSize="18" FontFamily="Franklin Gothic Medium" FontStyle="Italic" FontWeight="Bold"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,120,0,0" Width="200" Height="24"/>
+
+        <Button Content="Зарегестрироваться" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,258,0,0" Width="176" Click="RegisterButton_Click" Height="38" Foreground="#FF100D0D" FontFamily="Impact" FontSize="18"/>
+    </Grid>
+</Window>
